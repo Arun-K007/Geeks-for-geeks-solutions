@@ -4,8 +4,7 @@ class Solution {
         int rev=0;
         while(n>0){
         int digit = n%10;
-        rev*=10;
-        rev+=digit;
+        rev=(rev*10)+digit;
         n /=10;
         }
         return rev;
